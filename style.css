@@ -1,7 +1,10 @@
 /* css */
+
+/* Universals! */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    
 /* Variables section! */
     --dark-blue: #1f2937; 
         /* Used for background color (hero and footer), information header text color and quote text color */
@@ -13,4 +16,83 @@ body {
         /* Used for the button and the call to action background color */
 /* Font! */
     font-family: 'Roboto', 'Times New Roman', Times, serif;
+
+    box-sizing: border-box;
+
+    flex-direction: column;
 }
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+    gap: 10px;
+}
+a {
+    text-decoration: none;
+}
+
+/* Flex display area! */
+body,
+header,
+.top,
+.top ul,
+.information-area,
+.information-container
+ {
+    display:flex;
+}
+/* Colors area */
+header,
+footer {
+    background-color: var(--dark-blue);
+}
+
+.logo,
+.hero-text {
+    color: var(--white);
+}
+.secondary-hero-text,
+a {
+    color: var(--off-white);
+}
+.image-placeholder {
+    color: var(--white);
+    background-color: darkgrey;
+}
+button,
+.call2action {
+    background-color: var(--light-blue);
+}
+
+/* Header area */
+header {
+    flex-direction: column;
+    height:25vh;
+}
+
+/* Information Area */
+
+.information-area {
+    flex-direction: column;
+    
+}
+.information-container {
+    flex-direction:row;   
+}
+
+.info-image {
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis:0;
+}
+.info-image img {
+    border: solid .3rem var(--dark-blue);
+    width:100px;
+    height:100px;
+}
+
+/* Quote area */
+
+/* Call to action */
+
+/* Footer */
