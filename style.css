@@ -1,1 +1,16 @@
 /* css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    
+/* Variables section! */
+    --dark-blue: #1f2937; 
+        /* Used for background color (hero and footer), information header text color and quote text color */
+    --white: #F9FAF8;
+        /* hero main text color "this website is awesome", and also the hero logo text color */
+    --off-white: #E5E7EB;
+        /* hero secondary text color, as well as quote section background color */
+    --light-blue: #3882F6;
+        /* Used for the button and the call to action background color */
+/* Font! */
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+}
