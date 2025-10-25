@@ -32,6 +32,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    padding:0;
+    margin:0;
+}
 /* Flex display area! */
 body,
 header,
@@ -44,13 +48,7 @@ header,
  {
     display:flex;
 }
-/* header,
-.information-area,
-.quote-area,
-.call2action,
-footer {
-    min-height:50vh;
-} */
+
 
 /* Colors area */
 header,
@@ -76,11 +74,16 @@ button {
 
 .wrapper {
     flex-direction:column;
-    align-items: center;
     align-content: center;
     justify-content: center;
 }
 
+.quote-area {
+    background-color: var(--off-white);
+    color: var(--dark-blue);
+    font-size: 36px;
+    font-weight: 300;
+}
 
 /* Header area */
 header {
@@ -106,11 +109,11 @@ header {
     justify-content: space-between;
     align-items: stretch;
     flex:1 1 1;
+    gap:10px;
 }
 .hero-item {
-    flex:1 1 0;
-    /* border:2px red solid;   */
-    align-content: center; 
+    flex:1 1 0; 
+    align-content: center;
 }
 .hero-text {
     font-size: 48px;
@@ -170,6 +173,29 @@ button {
 
 .quote-area {
     min-height:20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:50px;
+
+}
+.quote,
+.author {
+    padding-left:100px;
+    padding-right:100px;
+}
+.quote {
+    flex:0 1 1;
+    min-width: 100px;
+}
+.author {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: flex-end;
+    font-weight: 500;
+    font-size: 20px;
 }
 /* Call to action */
 .call2action {
