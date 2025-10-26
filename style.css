@@ -14,7 +14,9 @@ body {
         /* hero secondary text color, as well as quote section background color */
     --light-blue: #3882F6;
         /* Used for the button and the call to action background color */
+
 /* Font! */
+
     font-family: 'Roboto', 'Times New Roman', Times, serif;
 
     box-sizing: border-box;
@@ -36,7 +38,9 @@ p {
     padding:0;
     margin:0;
 }
+
 /* Flex display area! */
+
 body,
 header,
 .top,
@@ -51,6 +55,7 @@ header,
 
 
 /* Colors area */
+
 header,
 footer {
     background-color: var(--dark-blue);
@@ -86,6 +91,7 @@ button {
 }
 
 /* Header area */
+
 header {
     min-height: 50vh;
     flex-direction: column;
@@ -98,7 +104,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* border: solid 2px red; */
 }
 .logo {
     font-size: 24px;
@@ -197,11 +202,34 @@ button {
     font-weight: 500;
     font-size: 20px;
 }
+
 /* Call to action */
+
 .call2action {
     min-height: 15vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
+.c2acontainer {
+    display:flex;
+    background-color: var(--light-blue);
+    color:var(--white);
+    border-radius: 14px;
+    padding:10px;
+    gap:10px;
+}
+.call2action button.sign-up {
+    border:var(--white) 2px solid;
+}
+
 /* Footer */
+
 footer {
+    display:flex;
     min-height: 10vh;
+    color: var(--white);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
