@@ -123,12 +123,14 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    flex:1 1 1;
+    flex:0 0 1;
     gap:10px;
+    flex-wrap: wrap;
 }
 .hero-item {
-    flex:1 1 0; 
+    flex:1 1 0;
     align-content: center;
+    
 }
 .hero-text {
     font-size: 48px;
@@ -136,6 +138,11 @@ header {
 }
 .image-placeholder {
     text-align: center;
+    align-self: center;
+    height:200px;
+    flex-basis:500px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 button {
     margin-top:10px;
