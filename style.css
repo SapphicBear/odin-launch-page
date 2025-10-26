@@ -5,7 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
+
 /* Variables section! */
+
     --dark-blue: #1f2937; 
         /* Used for background color (hero and footer), information header text color and quote text color */
     --white: #F9FAF8;
@@ -23,6 +25,7 @@ body {
 
     flex-direction: column;
     justify-content: center;
+    min-width:100%;
 }
 ul {
     list-style: none;
@@ -48,7 +51,12 @@ header,
 .information-area,
 .information-container,
 .hero-area,
-.wrapper
+.wrapper,
+.quote-area,
+footer,
+.call2action,
+.c2acontainer,
+.c2a-text-container
  {
     display:flex;
 }
@@ -93,10 +101,10 @@ button {
 /* Header area */
 
 header {
-    min-height: 50vh;
+    min-height: 350px;
     flex-direction: column;
     justify-content: space-between;
-    padding:0 100px 100px;
+    padding:0 150px 150px;
     align-items: stretch;
     padding-top:10px;
 }
@@ -128,6 +136,7 @@ header {
     text-align: center;
 }
 button {
+    margin-top:10px;
     padding:10px;
     min-width: 120px;
     color:var(--white);
@@ -136,6 +145,7 @@ button {
     text-align: center;
     border-radius: 12px;
     font-size:16px;
+    font-weight: 700;
 }
 
 
@@ -152,12 +162,14 @@ button {
 
 .information-area h1 {
     text-align: center;
+    padding:20px;
 
 }
 
 .information-container {
     flex-direction:row;  
-    justify-content: space-between;
+    justify-content: center;
+    gap:50px;
 }
 
 .info-image {
@@ -177,48 +189,61 @@ button {
 /* Quote area */
 
 .quote-area {
-    min-height:20vh;
-    display: flex;
+    min-height:200px;
     flex-direction: column;
+    padding:100px;
     align-items: center;
     justify-content: center;
-    padding:50px;
-
 }
+
 .quote,
 .author {
-    padding-left:100px;
-    padding-right:100px;
+    flex:1 1 auto;
+    padding-left:150px;
+    padding-right:150px;
 }
-.quote {
-    flex:0 1 1;
-    min-width: 100px;
-}
+
 .author {
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
     align-self: flex-end;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 25px;
+    padding-right: 180px;
 }
 
 /* Call to action */
 
 .call2action {
-    min-height: 15vh;
-    display:flex;
+    min-height: 320px;
+    min-width: 800px;
     justify-content: center;
     align-items: center;
+    padding-left:150px;
+    padding-right:150px;
+
 }
 .c2acontainer {
-    display:flex;
+    min-height:50px;
+    justify-content: space-around;
     background-color: var(--light-blue);
     color:var(--white);
     border-radius: 14px;
-    padding:10px;
+    padding:50px;
     gap:10px;
+    flex:1 1 0;
 }
+
+.c2a-text-container {
+    flex-direction: column;
+    gap:5px;
+}
+.pstrong {
+    font-weight: 800;
+    font-size: 24px;
+}
+
 .call2action button.sign-up {
     border:var(--white) 2px solid;
 }
@@ -226,8 +251,7 @@ button {
 /* Footer */
 
 footer {
-    display:flex;
-    min-height: 10vh;
+    min-height: 100px;
     color: var(--white);
     text-align: center;
     justify-content: center;
